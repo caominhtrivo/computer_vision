@@ -1,7 +1,7 @@
 import os
 import cv2
 
-image = cv2.imread(os.path.join('.','test.jpg'))
+image = cv2.imread(os.path.join('.','bird.jpg'))
 image = cv2.resize(image, (1200, 800))
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 ret, thresh = cv2.threshold(gray_image, 127, 255, cv2.THRESH_BINARY_INV)
